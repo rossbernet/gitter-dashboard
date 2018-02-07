@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+
+# this line is a one off, ad hoc command to install the java script dependencies
+# it knows to look for package.json in the app folder because
+# we've mounted it as a volume in the docker-compose.yml
+docker-compose run --rm app npm install
